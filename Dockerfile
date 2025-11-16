@@ -9,7 +9,8 @@ RUN mvn clean install -DskipTests=true
 
 
 #### Stage 2 - Execute the JAR obtained from Stage 1
-FROM openjdk:17-alpine
+#FROM openjdk:17-alpine
+FROM eclipse-temurin:17-jre-alpine
 
 WORKDIR /app
 
