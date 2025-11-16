@@ -3,8 +3,7 @@ version: "3.8"
 services:
 
   java_app:
-    build:
-      context: .
+    image: swapnil2298/expenses-tracker-java_app:${IMAGE_TAG}
     container_name: "expenseapp"
     networks:
       - expense-app-nw
